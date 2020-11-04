@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="task-list-wrapper">
+        <div class="header">
+            My to-do list
+        </div>
+        <div class="input-wrapper">
+            <form id="todo-form" autocomplete="off">
+                <input id="task-input" type="text" placeholder="Enter new task...">
+                <div class="buttons-wrapper">
+                    <button id="add" class="button" type="submit">Add task</button>
+                    <button id="show-hide" class="button" type="button">Show/Hide</button>
+                </div>
+            </form>
+        </div>
+        <ul class="task-list">
+            <li>
+                <span class="task">Wake up at 7 a.m.</span>
+                <div class="list-buttons">
+                    <button class="done button">
+                        <span class="check">✔</span>
+                    </button>
+                    <button class="remove button">×</button>
+                </div>
+            </li>
+            <li>
+                <span class="task">Go to the gym</span>
+                <div class="list-buttons">
+                    <button class="done button">
+                        <span class="check">✔</span>
+                    </button>
+                    <button class="remove button">×</button>
+                </div>
+            </li>
+            <li>
+                <span class="task">Working hard:)</span>
+                <div class="list-buttons">
+                    <button class="done button">
+                        <span class="check">✔</span>
+                    </button>
+                    <button class="remove button">×</button>
+                </div>
+            </li>
+            <li>
+                <span class="task">Do my homework</span>
+                <div class="list-buttons">
+                    <button class="done button">
+                        <span class="check">✔</span>
+                    </button>
+                    <button class="remove button">×</button>
+                </div>
+            </li>
+            <li>
+                <span class="task">Meet friends</span>
+                <div class="list-buttons">
+                    <button class="done button">
+                        <span class="check">✔</span>
+                    </button>
+                    <button class="remove button">×</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
