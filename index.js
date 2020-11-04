@@ -1,10 +1,10 @@
-var $add = document.querySelector('#add');
-var $taskInput = document.querySelector('#task-input');
+var $add = document.querySelector('#addButton');
+var $taskInput = document.querySelector('#taskInput');
 var $taskList = document.querySelector('.task-list');
 var $doneButtons = document.querySelectorAll('.task-list .done');
 var $removeButtons = document.querySelectorAll('.task-list .remove');
-var $showHide = document.querySelector('#show-hide');
-var $form = document.querySelector('#todo-form');
+var $showHide = document.querySelector('#showHideButton');
+var $form = document.querySelector('#todoForm');
 
 $form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -16,7 +16,9 @@ $showHide.addEventListener('click', function () {
 
 $add.addEventListener('click', function () {
     if ($taskInput.value.length < 3) return;
+
     var $li = document.createElement('li');
+    $li.classList.add('task-list-item'); 
 
     var $newTask = document.createElement('span');
     $newTask.classList.add('task');

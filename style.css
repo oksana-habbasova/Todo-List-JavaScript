@@ -19,7 +19,7 @@ body {
   background-color: #fdf1d7;
 }
 
-#task-input {
+.task-input {
   width: 100%;
   height: 40px;
   padding: 20px;
@@ -29,7 +29,7 @@ body {
   outline: none;
 }
 
-#task-input::placeholder {
+.task-input::placeholder {
   font-family: Arial;
   color: #b6b4b4;
 }
@@ -49,33 +49,26 @@ body {
 .button {
   margin: 5px;
   border-radius: 5px;
-  border: none;
   outline: none;
   cursor: pointer;
   transition: background-color ease-in 0.15s;
 }
 
-#add {
+.add-button,
+.show-hide-button {
   width: 150px;
   height: 40px;
   background-color: #bce595;
+  border: none;
 }
 
-#show-hide {
-  width: 150px;
-  height: 40px;
-  background-color: #bce595;
-}
-
-#add:hover {
+.add-button:hover,
+.show-hide-button:hover {
   background-color: #a7d681;
 }
 
-#show-hide:hover {
-  background-color: #a7d681;
-}
-
-.done {
+.done,
+.remove {
   width: 25px;
   height: 25px;
   padding: 0;
@@ -90,23 +83,12 @@ body {
   background-color: #b9e491;
 }
 
-.check {
-  opacity: 0;
-}
-
-.remove {
-  width: 25px;
-  height: 25px;
-  padding: 0;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  border: 1px solid #ecd9af;
-  background-color: #ffffff;
-}
-
 .remove:hover {
   background-color: #f5b399;
+}
+
+.check {
+  opacity: 0;
 }
 
 .task-list {
@@ -115,7 +97,7 @@ body {
   list-style: none;
 }
 
-.task-list li {
+.task-list-item {
   padding: 10px 20px;
   margin-top: 5px;
   border-radius: 5px;
